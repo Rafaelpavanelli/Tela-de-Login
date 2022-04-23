@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+body{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(image/529323\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+
+    
+}
+.container-cadastro{
+  
+    width:50vw;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    display: none;
+    
+   
+    
+    
+}
+.container-cadastro h1{
+    padding: 20px;
+    color: white;
+}
+.content-formulario{
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgb(78, 1, 82);
+    padding: 7%;
+}
+.content-formulario div{
+    width: 80%;
+    border:rgb(78, 1, 82) ;
+     margin-left:10px ;
+     display: flex;
+     border-bottom: 1px solid black;
+     background-color: rgb(78, 1, 82);
+     color: white;
+     margin: 20px;
+    display: flex;
+    border-bottom: 1px solid black;
+    color: white;
+    
+   
+}
+.content-formulario input{
+    width: 80%;
+   border:rgb(78, 1, 82) ;
+    margin-left:10px ;
+    display: flex;
+    border-bottom: 1px solid black;
+    background-color: rgb(78, 1, 82);
+    color: white;
+    width: 100%;
+    border: none;
+    color: white;
+    transition: 0.5s;
+  
+
+}
+i{
+    margin-bottom: 5px;
+}
+.content-formulario button{
+    background-color:rgba(115, 20, 120, 0.323) ;
+    border: 1px solid rgba(52, 52, 52, 0.733);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.content-formulario button:hover{
+    background-color:rgba(115, 20, 120, 0.718)
+}
+input:hover{
+    background-color:rgba(115, 20, 120, 0.718)
+}
+
+/*Cadastro.................................*/
+
+.container-login{
+  
+    width:50vw;
+    height: 50vh;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    
+    
+   
+    
+    
+}
+.container-login h1{
+    padding: 20px;
+    color: white;
+}
+.content-login{
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgb(78, 1, 82);
+    padding: 7%;
+}
+.content-login div{
+    width: 80%;
+    border:rgb(78, 1, 82) ;
+     margin-left:10px ;
+     display: flex;
+     border-bottom: 1px solid black;
+     background-color: rgb(78, 1, 82);
+     color: white;
+     margin: 20px;
+    display: flex;
+    border-bottom: 1px solid black;
+    color: white;
+    
+   
+}
+.content-login input{
+    width: 80%;
+   border:rgb(78, 1, 82) ;
+    margin-left:10px ;
+    display: flex;
+    border-bottom: 1px solid black;
+    background-color: rgb(78, 1, 82);
+    color: white;
+    width: 100%;
+    border: none;
+    color: white;
+    transition: 0.5s;
+  
+
+}
+i{
+    margin-bottom: 5px;
+}
+.content-login button{
+    background-color:rgba(115, 20, 120, 0.323) ;
+    border: 1px solid rgba(52, 52, 52, 0.733);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.content-login button:hover{
+    background-color:rgba(115, 20, 120, 0.718)
+}
+input:hover{
+    background-color:rgba(115, 20, 120, 0.718)
+}
+#botao{
+    border: none;
+    display: flex;
+   
+    justify-content: center;
+}
+#botao #button2{
+    background-color: rgb(13, 133, 131);
+    transition: 0.5s;
+}
+#botao #button{
+    background-color: rgb(6, 107, 6);
+    transition: 0.5s;
+}
+#botao #button:hover{
+    background-color: rgb(6, 123, 6);
+}
+#botao #button2:hover{
+    background-color: rgb(17, 154, 152);
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/b1dd2ee08a.js" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="shortcut icon" href="Tela_De_Login/" type="image/x-icon">
+
+    
+</head>
+<body>
+    
+    <div class="container-cadastro">
+        <h1>Formulário</h1>
+        <div class="content">
+            <div class="content-formulario">
+                <form id="cadastro" action="#" method="post">
+                    <label for=""></label>
+                    <div id="nome">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="usuario" placeholder="Nome Completo" >
+                    </div>
+                    <div id="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email"  placeholder="Email" >
+                    </div>
+                  
+                   <div id="senha">
+                    <i class="fa-solid fa-key"></i>
+                       <input type="password" name="" id="form-senha" placeholder="senha">
+                   </div>
+                   <button type="submit" id="button">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-login">
+        <h1>login</h1>
+        <div class="content">
+            
+                <div class="content-login">
+            <form>
+                 <div id="nome">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="usuario-login" placeholder="Nome Completo" value="admin" >
+                    </div>
+                    <div id="email">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="senha-login"  placeholder="senha" value="admin">
+                    </div>
+                    <div id="botao">
+                    <button type="" id="button1">Login</button>
+                    <button type="" id="button2">Cadastrar-se</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <script>
+       
+        function cadastrar() {
+            $('.container-login').css('display','none')
+            $('.container-cadastro').css('display','inline')
+
+            
+        }
+       function cadastroFeito(){
+           $('.container-cadastro').delay('10000').css('display','none')
+         $('.container-login').delay('3000').css('display','inline')
+       }
+       $('#button2').on("click",function(){
+        event.preventDefault()
+           cadastrar()
+       })
+      
+       
+
+       
+       $("#button1").on("click",function () {
+        event.preventDefault()
+        const senha=$('#senha-login').val()
+        const usuario=$("#usuario-login").val()
+        console.log(usuario);
+        console.log(senha);
+        
+        if (senha=="admin" && usuario=="admin" ) {
+                    $('<p>Login realizado</p>').appendTo('body')
+                            $('p').css('background-color','green').css('padding','7px')
+                            $('p').fadeOut(6000)
+         } else{
+                          
+            $('<p>Login não encontrado</p>').appendTo('body')
+                            $('p').css('background-color','yellow').css('padding','7px')
+                            $('p').fadeOut(6000)
+                            
+        }
+           
+       })
+       $('#button').on("click",function(){
+                     event.preventDefault()
+                     const input=$('input')
+                    
+                     if(input<8){
+                         $('<p>senha ou email não esta nos padroes</p>').appendTo('.content-formulario')
+                            $('p').css('background-color','red').css('padding','7px')
+                            $('p').fadeOut(6000)
+                            
+                     }else{
+                            $('<p>Cadastro Realizado</p>').appendTo('body')
+                            $('p').css('background-color','green').css('padding','7px').css('border-radius','20px').css('margin','10px')
+                            $('p').fadeOut(6000)
+                            cadastroFeito();
+        
+                    }})
+                
+   
+    </script>
+</body>
+</html>
